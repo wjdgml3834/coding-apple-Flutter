@@ -10,16 +10,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children : [
-            Icon(Icons.star),
-            Icon(Icons.star),
-            Icon(Icons.star)
-         ],
+        appBar: AppBar(
+          title: Text("Flutter 과제는 처음입니다."),
+          centerTitle: false,
         ),
-      )
-    );
+        body: Text('안녕'),
+        bottomNavigationBar: BottomAppBar(
+          child: SizedBox(
+            height: 70,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(Icons.phone),
+                Icon(Icons.message),
+                Icon(Icons.contact_page),
+              ],
+            ),
+          )
+        )
+        ),
+      );
   }
 }
