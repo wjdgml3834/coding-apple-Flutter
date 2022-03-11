@@ -15,19 +15,7 @@ class MyApp extends StatelessWidget {
           centerTitle: false,
         ),
         body: Text('안녕'),
-        bottomNavigationBar: BottomAppBar(
-          child: SizedBox(
-            height: 70,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Icon(Icons.phone),
-                Icon(Icons.message),
-                Icon(Icons.contact_page),
-              ],
-            ),
-          )
-        )
+
         ),
       );
   }
