@@ -11,13 +11,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flutter 과제는 처음입니다."),
+          title: Text("연습용입니다."),
           centerTitle: false,
         ),
-        body: Align(
-          alignment: Alignment.topCenter,
-          child: Container(
-            width: double.infinity, height: 50, color: Colors.blue
+        body: SizedBox(
+          child: Text('안녕하세요',
+          style: TextStyle(fontWeight: FontWeight.w700)
           ),
         )
           ),
